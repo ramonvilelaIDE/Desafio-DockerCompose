@@ -1,0 +1,16 @@
+[Tutorial] Git + VS Code: como trabalhar com branches utilizando sua IDE
+
+
+
+Se tentarmos o comando git status, veremos que ele nos informa em qual branch estamos.
+mkdir git-branch-tutorial
+cd git-branch-tutorial/
+git init
+git status (para informar em qual branch nós estamos)
+
+Como podemos ver, o git já reconheceu o arquivo e o classificou como untracked. Vamos aprender a mover este arquivo para nossa Staging Area. Basta clicar na aba Source Control (ou ctrl+shift+g) para ir para a parte de versionamento, e clicar no botão para fazer o stage (representando por um +)
+Agora, vamos confirmar nossas alterações fazendo um commit. Primeiramente, vamos escrever uma mensagem para nosso commit e então clicar no botão para fazer o commit.
+
+Ok, mas o assunto principal aqui são as branches, certo? Então vamos começar criando uma nova branch. No menu de ações da aba do git, podemos visualizar várias outras operações que podemos realizar no nosso repositório, porém iremos focar nas opções de 'Branch'.
+
+Se passarmos o mouse em cima, veremos que o menu expande nos mostrando outras ações. Escolheremos a "Create branch" ou "Criar branch".
