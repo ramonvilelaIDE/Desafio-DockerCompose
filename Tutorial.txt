@@ -14,3 +14,14 @@ Agora, vamos confirmar nossas alterações fazendo um commit. Primeiramente, vam
 Ok, mas o assunto principal aqui são as branches, certo? Então vamos começar criando uma nova branch. No menu de ações da aba do git, podemos visualizar várias outras operações que podemos realizar no nosso repositório, porém iremos focar nas opções de 'Branch'.
 
 Se passarmos o mouse em cima, veremos que o menu expande nos mostrando outras ações. Escolheremos a "Create branch" ou "Criar branch".
+
+
+Ok, mas o assunto principal aqui são as branches, certo? Então vamos começar criando uma nova branch. No menu de ações da aba do git, podemos visualizar várias outras operações que podemos realizar no nosso repositório, porém iremos focar nas opções de 'Branch'.
+
+Se passarmos o mouse em cima, veremos que o menu expande nos mostrando outras ações. Escolheremos a "Create branch" ou "Criar branch.
+Perceba que além de criar a nova branch, o VS Code já nos moveu para a nova branch (na parte inferior esquerda do VS Code é possível ver o nome da branch atual). Agora, qualquer código produzido aqui não irá afetar a branch master.
+
+O comando no terminal equivalente a esta operação seria:
+git branch <nome da branch> seguido do comando git checkout <nome da branch>, ou simplesmente git checkout -b <nome da branch.
+
+Vamos aproveitar que já estamos na nova branch e alterar o nosso arquivo, para então adicioná-lo na staging area e fazer o commit.
