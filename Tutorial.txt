@@ -29,3 +29,7 @@ Vamos aproveitar que já estamos na nova branch e alterar o nosso arquivo, para 
 
 RAMON: EDITANDO NA NOVA Branch
 
+Em seguida voltamos para a branch master. Basta ir em '...' na parte superior e selecionar 'check out to' para indicar qual branch queremos voltar. O tutorial indica 'master'.
+
+
+
