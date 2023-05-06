@@ -1,6 +1,6 @@
 [Tutorial] Git + VS Code: como trabalhar com branches utilizando sua IDE
 
-
+SEGUINDO O SEGUINTE LINK: https://dev.to/kauecdev/tutorial-git-vs-code-como-trabalhar-com-branches-utilizando-sua-ide-2gbd
 
 Se tentarmos o comando git status, veremos que ele nos informa em qual branch estamos.
 mkdir git-branch-tutorial
@@ -25,3 +25,7 @@ O comando no terminal equivalente a esta operação seria:
 git branch <nome da branch> seguido do comando git checkout <nome da branch>, ou simplesmente git checkout -b <nome da branch.
 
 Vamos aproveitar que já estamos na nova branch e alterar o nosso arquivo, para então adicioná-lo na staging area e fazer o commit.
+
+
+RAMON: EDITANDO NA NOVA Branch
+
