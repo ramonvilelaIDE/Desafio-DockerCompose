@@ -1,0 +1,62 @@
+# Again
+
+Tentativa de conseguir upar o compose para o desafio da DIO
+
+Steps: 1) Eu primeiro crio o arquivo compose contendo o Apache como service.
+
+sudo nano compose.yml
+
+dentro do nano:
+version: '3.9'
+
+services:
+  apache:
+    images: httpd:latest
+    container_name: my-apache-app
+    ports:
+    - '80:80'
+    volumes:
+    - ./website:/usr/local/apache2/htdocs
+
+
+
+ctrl+x e ctrl+o
+
+
+root@ip-172-31-86-95:~/docker-projeto1-dio#
+root@ip-172-31-86-95:~/docker-projeto1-dio# mkdir website/
+root@ip-172-31-86-95:~/docker-projeto1-dio# cd website/
+root@ip-172-31-86-95:~/docker-projeto1-dio/website# nano index.html (Para criar o arquivo HTML)
+
+dentro do nano:
+<html>
+
+<h1> Olá! Seja bem-vindo ao meu primeiro projeto Docker!!</h1> 
+
+</html>
+
+
+ctrl+o e ctrl+x
+
+root@ip-172-31-86-95:~/docker-projeto1-dio/website#
+root@ip-172-31-86-95:~/docker-projeto1-dio/website# cd ..
+root@ip-172-31-86-95:~/docker-projeto1-dio#
+root@ip-172-31-86-95:~/docker-projeto1-dio# apt install docker-compose ("primeira coisa que eu preciso fazer é instalar o docker compose)
+root@ip-172-31-86-95:~/docker-projeto1-dio# 
+root@ip-172-31-86-95:~/docker-projeto1-dio# docker-compose up -d ("depois de instalado eu preciso gerar o arquivo)
+root@ip-172-31-86-95:~/docker-projeto1-dio# 
+root@ip-172-31-86-95:~/docker-projeto1-dio# docker container ls		(para exibir o container rodando. É exatamente a mesma coisa que o comando 'docker ps')
+root@ip-172-31-86-95:~/docker-projeto1-dio#
+
+
+"Vamos checar se a aplicação se eu tenho acesso a essa aplicação...
+Primeiro eu preciso liberar a porta HTTP - como eu estou rodando em nuvem - (então ele vai na  opção segurança --> grupos de segurança)
+Como já fizemos anteriormente, eu nao vou fazer, mas era só liberar a porta HTTP.
+Vamos pegar aqui o ip dele (ele vai na opção EC2 --> detalhes --> Endereço IPV4 público). Copia o ip e joga no browser.
+Então meu projeto docker está rodando  a partir de um docker-compose.
+
+A grande vantagem de ter um arquivo dentro do GitHub é que, agora, eu posso fazer o download de qualquer lugar e subir as imagens que eu desejar.
+Neste exemplo aqui, eu fiz um simples, mas poderia também dentro desse git já ter a pasta da minha aplicação ou as pastas da minhas aplicações, e de uma vz só consigo rodar e subir.
+Não se esqueça de subir as alterações que você fizer para o seu Git."
+
+
