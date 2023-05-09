@@ -64,12 +64,12 @@ Não se esqueça de subir as alterações que você fizer para o seu Git."
 Eu necessitei fazer algumas coisas primeiro para conseguir fazer o push:
 
 git clone https://github.com/ramonvilelaIDE/Again.git 
-git add . (comando para adicionar todos os arquivos) git c
+git add . (comando para adicionar todos os arquivos)
 git commit -m "inserir a frase que diz sobre o foi feito"
 
 git push
 
-como o 'git push' deu erro eu precisei gerar um token. Então, eu segui o seguinte tutorial:
+como o 'git push' deu erro, eu precisei gerar um token. Então, eu segui o seguinte tutorial:
 <https://stackoverflow.com/questions/68775869/message-support-for-password-authentication-was-removed-please-use-a-personal>
 
 Parte que eu usei por ser um server Linux:
@@ -87,4 +87,4 @@ Username: <type your username>
 Password: <type your password or personal access token (GitHub)
 
 
-Após isso push funcionou normalmente.
+Após isso, o git push funcionou normalmente.
